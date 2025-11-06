@@ -6,8 +6,7 @@
   <title>Objet Naturel</title>
 
   <link rel="preload" as="image" href="Texturelabs_Paper_210XL.jpg">
-  <link rel="preload" as="image" href="Objet Naturel.svg">
-  <link rel="preload" as="image" href="Coming Soon.svg">
+  <link rel="preload" as="image" href="O—N.svg">
 
   <style>
     html, body { height: 100%; margin: 0; overflow: hidden; }
@@ -36,51 +35,28 @@
     @supports (min-height: 100dvh) { .viewport { min-height: 100dvh; } }
     @supports (min-height: 100svh) { .viewport { min-height: 100svh; } }
 
-    .stack {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 6px;
-      width: min(42vw, 220px);
-    }
-
-    .logo,
-    .tagline {
-      width: 100%;
+    .mark {
+      width: min(28vw, 160px);
+      max-width: 160px;
       height: auto;
       pointer-events: none;
       -webkit-user-drag: none;
       user-drag: none;
       image-rendering: -webkit-optimize-contrast;
       image-rendering: crisp-edges;
-    }
-
-    .logo {
-      width: min(34vw, 180px);
-      max-width: 180px;
-    }
-    .tagline {
-      width: min(18vw, 110px); /* smaller tagline */
-      max-width: 110px;
-      opacity: 0.94;
-    }
-
-    img[src$=".svg"] {
       shape-rendering: geometricPrecision;
       text-rendering: geometricPrecision;
-      image-rendering: -webkit-optimize-contrast;
+      opacity: 0.96;
     }
   </style>
 </head>
 <body>
-  <main class="viewport" aria-label="Coming Soon">
-    <div class="stack">
-      <img class="logo" src="Objet Naturel.svg" alt="" draggable="false" decoding="async" />
-      <img class="tagline" src="Coming Soon.svg" alt="" draggable="false" decoding="async" />
-    </div>
+  <main class="viewport" aria-label="Objet Naturel">
+    <img class="mark" src="O—N.svg" alt="" draggable="false" decoding="async" />
   </main>
 
   <script>
+    // Disable context menu & common copy shortcuts
     document.addEventListener('contextmenu', e => e.preventDefault());
     document.addEventListener('keydown', e => {
       if ((e.ctrlKey || e.metaKey) && ['a','c','s','p','x'].includes(e.key.toLowerCase())) {
