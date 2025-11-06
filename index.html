@@ -6,7 +6,7 @@
   <title>Objet Naturel</title>
 
   <link rel="preload" as="image" href="Texturelabs_Paper_210XL.jpg">
-  <link rel="preload" as="image" href="O—N.svg">
+  <link rel="preload" as="image" href="O—N.svg?v=4">
 
   <style>
     html, body { height: 100%; margin: 0; overflow: hidden; }
@@ -52,11 +52,11 @@
 </head>
 <body>
   <main class="viewport" aria-label="Objet Naturel">
-    <img class="mark" src="O—N.svg" alt="" draggable="false" decoding="async" />
+    <img class="mark" src="O—N.svg?v=4" alt="O—N logo" draggable="false" decoding="async" />
   </main>
 
   <script>
-    // Disable context menu & common copy shortcuts
+    // Disable right-click and copy shortcuts
     document.addEventListener('contextmenu', e => e.preventDefault());
     document.addEventListener('keydown', e => {
       if ((e.ctrlKey || e.metaKey) && ['a','c','s','p','x'].includes(e.key.toLowerCase())) {
