@@ -4,73 +4,28 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Objet Naturel</title>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400&display=swap" rel="stylesheet">
+
+  <link rel="preload" as="image" href="./Texturelabs_Paper_210XL.jpg" />
+  <meta name="theme-color" content="#e9e7e3" />
+
   <style>
     html, body {
       height: 100%;
       margin: 0;
+      background-color: #e9e7e3;
       overflow: hidden;
+      overscroll-behavior: none;
     }
-    .page-bg {
-      position: fixed;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-      pointer-events: none;
-      user-select: none;
-    }
-    .content {
-      position: absolute;
-      inset: 0;
-      display: grid;
-      place-items: center;
-      padding: 0;
-    }
-    .logo {
-      width: 250px;
-      height: auto;
-      opacity: 0.6;
-      pointer-events: none;
-      user-select: none;
-      display: block;
-    }
-    .coming-soon {
-      width: 120px;
-      height: auto;
-      opacity: 0.6;
-      margin-top: 1rem;
-      pointer-events: none;
-      user-select: none;
-      display: block;
+
+    body {
+      background-image: url("./Texturelabs_Paper_210XL.jpg");
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      image-rendering: auto;
     }
   </style>
 </head>
 <body>
-  <img
-    class="page-bg"
-    src="./Texturelabs_Paper_210XL.jpg"
-    alt="Subtle gray paper texture background"
-    fetchpriority="high"
-  />
-  <main class="content" aria-label="Landing page">
-    <div style="display: grid; place-items: center; text-align: center;">
-      <img
-        class="logo"
-        src="./Objet Naturel.svg"
-        alt="Objet Naturel logo"
-        loading="eager"
-        decoding="async"
-      />
-      <img
-        class="coming-soon"
-        src="./Coming Soon.svg"
-        alt="Coming Soon"
-        loading="eager"
-        decoding="async"
-      />
-    </div>
-  </main>
 </body>
 </html>
