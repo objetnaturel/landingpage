@@ -6,7 +6,7 @@
 <filter id="filter0_g_459_4" x="0" y="0" width="341.022" height="68.864" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feTurbulence type="fractalNoise" baseFrequency="2 2" numOctaves="3" seed="1118" />
+<feTurbulence type="fractalNoise" baseFrequency="4 4" numOctaves="3" seed="1118" />
 <feDisplacementMap in="shape" scale="8" xChannelSelector="R" yChannelSelector="G" result="displacedImage" width="100%" height="100%" />
 <feMerge result="effect1_texture_459_4">
 <feMergeNode in="displacedImage"/>
