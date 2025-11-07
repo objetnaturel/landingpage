@@ -11,26 +11,23 @@
       padding: 0;
       height: 100%;
       width: 100%;
-      background-color: #ffffff; /* blank background */
+      background-color: #ffffff;
     }
     body {
       display: flex;
       align-items: center;
       justify-content: center;
     }
-    /* Centered SVG logo, no animations */
     img {
       display: block;
       height: auto;
-      width: clamp(200px, 24vw, 420px); /* balanced across devices */
+      width: clamp(140px, 16vw, 260px);
     }
-    /* Make a touch larger on narrow portrait phones */
     @media (max-width: 480px) and (orientation: portrait) {
-      img { width: clamp(220px, 66vw, 480px); }
+      img { width: clamp(160px, 44vw, 300px); }
     }
-    /* Cap on large desktops */
     @media (min-width: 1280px) {
-      img { width: clamp(240px, 18vw, 520px); }
+      img { width: clamp(180px, 12vw, 300px); }
     }
   </style>
 </head>
