@@ -1,62 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Objet Naturel</title>
-
-  <link rel="preload" as="image" href="Objet Naturel.svg?v=8">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Landing</title>
   <style>
-    html, body { height: 100%; margin: 0; overflow: hidden; background: #ffffff; }
-
-    body {
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-      -webkit-user-drag: none;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, sans-serif;
-      cursor: default;
-    }
-
-    .viewport {
-      min-height: 100vh;
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      background: #000 url('background.svg') no-repeat center center fixed;
+      background-size: cover;
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #ffffff;
     }
-    @supports (min-height: 100dvh) { .viewport { min-height: 100dvh; } }
-    @supports (min-height: 100svh) { .viewport { min-height: 100svh; } }
-
-    .logo {
-      width: min(34vw, 180px);
-      max-width: 180px;
+    img {
+      width: 240px;
       height: auto;
-      pointer-events: none;
-      -webkit-user-drag: none;
-      user-drag: none;
-      image-rendering: -webkit-optimize-contrast;
-      image-rendering: crisp-edges;
-      shape-rendering: geometricPrecision;
-      text-rendering: geometricPrecision;
     }
   </style>
 </head>
 <body>
-  <main class="viewport" aria-label="Objet Naturel">
-    <img class="logo" src="Objet Naturel.svg?v=8" alt="Objet Naturel logo" draggable="false" decoding="async" />
-  </main>
-
-  <script>
-    // Disable right-click and copy shortcuts
-    document.addEventListener('contextmenu', e => e.preventDefault());
-    document.addEventListener('keydown', e => {
-      if ((e.ctrlKey || e.metaKey) && ['a','c','s','p','x'].includes(e.key.toLowerCase())) {
-        e.preventDefault();
-      }
-    });
-  </script>
+  <img src="logo.svg" alt="Logo">
 </body>
 </html>
